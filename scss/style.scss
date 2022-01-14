@@ -39,7 +39,7 @@ header {
 
 		span a:hover {
 			color: #fff;
-            text-decoration: none;
+			text-decoration: none;
 		}
 	}
 }
@@ -67,9 +67,9 @@ header {
 .resources {
 	height: 100vh;
 	margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 	.card-margin {
 		margin-bottom: 1.875rem;
@@ -94,121 +94,156 @@ header {
 		border: 1px solid #e6e4e9;
 		border-radius: 8px;
 
-        &-header.no-border {
-            border: 0;
-        }
+		&-header.no-border {
+			border: 0;
+		}
 
-        &-header {
-            background: none;
-            padding: 0 0.9375rem;
-            font-weight: 500;
-            display: flex;
-            align-items: center;
-            min-height: 50px;
-        }
+		&-header {
+			background: none;
+			padding: 0 0.9375rem;
+			font-weight: 500;
+			display: flex;
+			align-items: center;
+			min-height: 50px;
+		}
 
-        &-header:first-child {
-            border-radius: calc(8px - 1px) calc(8px - 1px) 0 0;
-        }
+		&-header:first-child {
+			border-radius: calc(8px - 1px) calc(8px - 1px) 0 0;
+		}
 
-        .resource {
+		.resource {
+			&-title-wrapper {
+				display: flex;
+				align-items: center;
 
-            &-title-wrapper {
-                display: flex;
-                align-items: center;
+				.resource-primary {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					flex-direction: column;
+					background-color: #edf1fc;
+					width: 4rem;
+					height: 4rem;
+					border-radius: 50%;
 
-                .resource-primary {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    flex-direction: column;
-                    background-color: #edf1fc;
-                    width: 4rem;
-                    height: 4rem;
-                    border-radius: 50%;
+					.resource-number {
+						color: #4e73e5;
+						font-weight: 500;
+						font-size: 2rem;
+						line-height: 1;
+					}
+				}
 
-                    .resource-number {
-                        color: #4e73e5;
-                        font-weight: 500;
-                        font-size: 1.5rem;
-                        line-height: 1;
-                    }
+				.resource-success {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					flex-direction: column;
+					background-color: #e8faf8;
+					width: 4rem;
+					height: 4rem;
+					border-radius: 50%;
 
-                   
-                }
+					.resource-number {
+						color: $success-color;
+						font-weight: 500;
+						font-size: 2rem;
+						line-height: 1;
+					}
+				}
 
-               
+				.resource-warning {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					flex-direction: column;
+					background-color: #fffaf0;
+					width: 4rem;
+					height: 4rem;
+					border-radius: 50%;
 
-                .resource-success {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    flex-direction: column;
-                    background-color: #e8faf8;
-                    width: 4rem;
-                    height: 4rem;
-                    border-radius: 50%;
+					.resource-number {
+						color: $warning-color;
+						font-weight: 500;
+						font-size: 2rem;
+						line-height: 1;
+					}
+				}
 
-                    .resource-number {
-                        color: $success-color;
-                        font-weight: 500;
-                        font-size: 1.5rem;
-                        line-height: 1;
-                      }
-                }
+				.resource-info {
+					display: flex;
+					flex-direction: column;
+					margin-left: 1rem;
 
-                
+					.resource-title {
+						color: #3c4142;
+						font-size: 14px;
+					}
+				}
+			}
 
-                  .resource-warning {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    flex-direction: column;
-                    background-color: #fffaf0;
-                    width: 4rem;
-                    height: 4rem;
-                    border-radius: 50%;
+			p {
+				font-weight: 400;
+				font-size: 13px;
+				margin-top: 0.5rem;
+				color: #727686;
+			}
 
-                    .resource-number {
-                        color: $warning-color;
-                        font-weight: 500;
-                        font-size: 1.5rem;
-                        line-height: 1;
-                      }
-                  }
+			.resource-meeting-action {
+				text-align: right;
 
-                  .resource-info {
-                    display: flex;
-                    flex-direction: column;
-                    margin-left: 1rem;
-
-                    .resource-title {
-                        color: #3c4142;
-                        font-size: 14px;
-                    }
-
-                  }
-                  
-
-
-            }
-
-            p {
-                font-weight: 400;
-                font-size: 13px;
-                margin-top: .5rem;
-                color: #727686;
-
-                
-              }
-
-            .resource-meeting-action {
-                text-align: right;
-
-                a {
-                    text-transform: uppercase;
-                  }
-            }
-        }
+				a {
+					text-transform: uppercase;
+				}
+			}
+		}
 	}
+}
+
+.contact {
+    background-color: $primary-color-dark;
+    height: 50vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+        color: $bg-primary;
+    }
+
+    .social-icons {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+
+        .social-icon {
+            margin-right: 1rem;
+            font-size: 2.5rem;
+
+            .la-linkedin-in{
+                color: $warning-color;
+            }
+
+            .la-whatsapp {
+                color: $success-color;
+            }
+
+            .la-instagram {
+                color: $danger-color;
+            }
+        }
+    }
+
+}
+
+footer {
+    height: 20vh;
 }
