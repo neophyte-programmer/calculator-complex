@@ -1,0 +1,23 @@
+// Base Styling
+
+// Universal Selector
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Body
+body {
+    font-family: $primary-font;
+}
+
+// Links
+a {
+    text-decoration: none;
+}
+
+// Lists
+li {
+    list-style: none;
+}
