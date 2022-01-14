@@ -1,0 +1,6 @@
+
+font name: Heuristica-Regular
+Slogan Font: Snickles.ttf
+      
+{"bg":"transparent","icon-gradient-0":"#E98E0D","icon-gradient-1":"#1536F1","font":"#000000","slogan":"#141414"}
+      
