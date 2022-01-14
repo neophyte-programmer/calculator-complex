@@ -1,5 +1,6 @@
 @import 'config';
 @import 'base';
+@import 'buttons';
 
 header {
     display: flex;
@@ -7,6 +8,7 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: $primary-color-dark;
+    border-bottom: 1px solid $primary-color;
 
     .logo {
         width: 200px;
@@ -34,5 +36,30 @@ header {
             color: $accent-color;
             transform: scale(.98);
         }
+
+        span a:hover {
+            color: #fff;
+        }
+
+    }
+}
+
+section {
+    height: 86.76vh;
+    background-color: $primary-color-dark;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h1{
+        color: #fff;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .subtitle {
+        color: $accent-color;
     }
 }

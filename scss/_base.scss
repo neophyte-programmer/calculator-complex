@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+// HTML
+html {
+    scroll-behavior: smooth;
+}
+
 // Body
 body {
     font-family: $primary-font;
@@ -20,4 +25,9 @@ a {
 // Lists
 li {
     list-style: none;
+}
+
+.container {
+    max-width: 800px;
+    padding: 10px;
 }

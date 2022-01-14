@@ -1,0 +1,39 @@
+%btn {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 8px 20px;
+    margin: 3px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: scale(.98);
+        color: #fff;
+    }
+}
+
+.btn-primary {
+    @extend %btn;
+    background-color: $primary-color;
+}
+
+.btn-primary-dark {
+    @extend %btn;
+}
+
+.btn-accent {
+    @extend %btn;
+    background-color: $accent-color
+}
+
+.btn-success {
+    @extend %btn;
+}
+
+.btn-danger {
+    @extend %btn;
+}
+
+.btn-warning {
+    @extend %btn;
+}
+
