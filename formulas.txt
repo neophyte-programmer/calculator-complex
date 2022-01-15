@@ -2,6 +2,12 @@ STATS
 1. Mean
 2. Median
 3. Mode
+4. Variance
+5. Standard Deviation
+6. Permutations
+7. Combinations
+8. Poisson Probability Distribution
+9. Binomial Probability Distribution
 
 SCIENCE
 
