@@ -24,17 +24,23 @@ function median() {
 	// arranging in ascending order
 	dataNumber = dataNumber.sort(function (a, b) {
 		return a - b
-	})
+    })
+    
+    var answer = 0
 
 	if (dataNumber.length % 2 == 1) {
 		// length is odd
-		console.log(dataNumber[dataNumber.length / 2 - 0.5])
+        console.log(dataNumber[dataNumber.length / 2 - 0.5])
+        answer = dataNumber[dataNumber.length / 2 - 0.5]
 	} else {
 		console.log(
 			(dataNumber[dataNumber.length / 2] +
-				dataNumber[dataNumber.length / 2 - 1]) / 2
-		)
+                dataNumber[dataNumber.length / 2 - 1]) / 2
+            
+        )
+        
+        answer = (dataNumber[dataNumber.length / 2] + dataNumber[dataNumber.length / 2 - 1]) / 2
 	}
 
-	console.log(dataNumber)
+	document.getElementById("median").innerHTML = answer
 }
