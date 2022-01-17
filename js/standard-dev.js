@@ -1,4 +1,4 @@
-function getVariance() {
+function getStandardDev() {
     //store user input
 	var dataSet = []
 
@@ -71,9 +71,8 @@ function getVariance() {
     
     variance = nominator / (n-1)
 
-    console.log(mean)
-    console.log(nominator)
+    standardDev = Math.sqrt(variance)
 
-    document.getElementById("variance").innerHTML = variance
+    document.getElementById("standard-dev").innerHTML = standardDev.toFixed(5) 
 
 }
