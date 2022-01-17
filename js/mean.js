@@ -8,5 +8,5 @@ function mean() {
 
     answer = sum / nums.length
     
-	document.getElementById('mean').innerHTML = answer
+	document.getElementById('mean').innerHTML = answer.toFixed(5)
 }
