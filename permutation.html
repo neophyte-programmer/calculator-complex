@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			rel="stylesheet"
+			id="bootstrap-css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+		/>
+		<link
+			rel="shortcut icon"
+			type="image/jpg"
+			href="/img/favicons/favicon.ico"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<title> Permututations | Calculator Complex</title>
+
+        
+	</head>
+    <body>
+        
+        <div class="container d-flex justify-content-center align-items-center my-5 ">
+            <a href="/statistics-formulas.html" class="btn btn-primary">Back To Formulas</a>
+        </div>
+
+
+		<div id="main-wrapper" class="container mean">
+			<div class="row justify-content-center">
+				<div class="col-xl-10">
+					<div class="card border-0">
+						<div class="card-body p-0">
+							<div class="row no-gutters">
+								<div class="col-lg-6">
+									<div class="p-5">
+										<div class="mb-5">
+											<h3 class="h4 font-weight-bold text-theme">Permutation</h3>
+										</div>
+		
+										<h6 class="h5 mb-0 text-center">Calculate</h6>
+										<p class="text-muted mt-2 mb-5">
+                                            Enter the values for <strong class="text-primary">n</strong> and <strong class="text-primary">r</strong> where 
+                                            <strong class="text-primary">n</strong> is total number of objects in the sets and 
+                                            <strong class="text-primary">r</strong> is the subset size
+										</p>
+                                            <div class="container-fluid row permutation-box">
+											<label class="mx-2" >Enter n:</label>
+											<input class="nums form-control" id="n" type="text" required="required" style="max-width: 3.5rem;" />
+                                            </div>
+
+                                            <div class="container-fluid row permutation-box my-2">
+                                                <label class="mx-2" >Enter r:</label>
+                                                <input class="nums form-control" id="r" type="text" required="required" style="max-width: 3.5rem;" />
+                                                </div>
+											
+											<button class="btn btn-primary my-2" onclick="getPermutation()">Get answer</button>
+											<p class="text-muted">The answer is:</p>
+											<h3 id="permutation"></h3>
+										
+                                        
+										
+									</div>
+								</div>
+		
+								<div class="col-lg-6 d-none d-lg-inline-block">
+									<div class="account-block rounded-right">
+										<div class="overlay rounded-right"></div>
+										<div class="account-testimonial">
+											<h4 class="text-white mb-4">What is Permutation?</h4>
+											<p class="lead text-white">
+												A permutation is an arrangement of all or part of a set of objects, with regard to the order of the arrangement.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+		
+						</div>
+					</div>
+		
+                    
+		
+				</div>
+			</div>
+		</div>
+        
+
+      
+
+        <script src="/js/permutation.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
