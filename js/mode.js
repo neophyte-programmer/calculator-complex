@@ -27,14 +27,14 @@ function getMode() {
     })
     
     
-    var frequency = {}
-    var maxFreq = 0
+    var frequency = {} // array to store the frequency
+    var max = 0
 
     for (var i in dataNumber) {
         frequency[dataNumber[i]] = (frequency[dataNumber[i]] || 0) + 1
 
-        if (frequency[dataNumber[i]] > maxFreq) {
-            maxFreq = frequency[dataNumber[i]]
+        if (frequency[dataNumber[i]] > max) {
+            max = frequency[dataNumber[i]]
             answer = dataNumber[i]
         }
     }
