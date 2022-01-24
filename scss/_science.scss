@@ -1,0 +1,35 @@
+.science {
+    .account-block {
+        padding: 0;
+        background-image: url(https://images.ctfassets.net/cnu0m8re1exe/3FFIAa8yNOW8PhFHDn4SMj/ac0487c3d5798168a572105a67085ae1/shutterstock_582084685.png?fm=jpg&fl=progressive&w=660&h=433&fit=fill);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        position: relative;
+
+        .overlay {
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .account-testimonial {
+            text-align: center;
+            color: #fff;
+            position: absolute;
+            margin: 0 auto;
+            padding: 0 1.75rem;
+            bottom: 3rem;
+            left: 0;
+            right: 0;
+        }
+    }
+
+    
+}
