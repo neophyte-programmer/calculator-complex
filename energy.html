@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			rel="stylesheet"
+			id="bootstrap-css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+		/>
+		<link
+			rel="shortcut icon"
+			type="image/jpg"
+			href="/img/favicons/favicon.ico"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<title> Energy | Calculator Complex</title>
+
+        
+	</head>
+    <body>
+        
+        <div class="container d-flex justify-content-center align-items-center my-5 ">
+            <a href="/science-formulas.html" class="btn btn-primary">Back To Formulas</a>
+        </div>
+
+
+		<div id="main-wrapper" class="container science">
+			<div class="row justify-content-center">
+				<div class="col-xl-10">
+					<div class="card border-0">
+						<div class="card-body p-0">
+							<div class="row no-gutters">
+								<div class="col-lg-6">
+									<div class="p-5">
+										<div class="mb-5">
+											<h3 class="h4 font-weight-bold text-theme">Energy</h3>
+										</div>
+		
+										<h6 class="h5 mb-0 ">Calculate</h6>
+										<p class="text-muted mt-2 mb-5">
+                                            Enter the values for <span class="text-primary">F</span> <span class="text-dark">(mass)</span>
+										</p>
+		
+                                            <div class="container-fluid row permutation-box">
+											<label class="mx-2" >Enter m:</label>
+											<input class="nums form-control" id="mass" type="text" required="required" style="max-width: 3.5rem;" />
+                                            </div>
+
+                                            
+											
+											<button class="btn btn-primary my-2" onclick="getEnergy()">Get Energy</button>
+											<p class="text-muted">The answer is:</p>
+											<h3 id="energy"></h3>
+										
+                                        
+										
+									</div>
+								</div>
+		
+								<div class="col-lg-6 d-none d-lg-inline-block">
+									<div class="account-block rounded-right">
+										<div class="overlay rounded-right"></div>
+										<div class="account-testimonial">
+											<h4 class="text-white mb-4">What is Energy?</h4>
+											<p class="lead text-white">
+												Energy is the quantitative property that must be transferred to a body or physical system to perform work on the body, or to heat it.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+		
+						</div>
+					</div>
+		
+					
+		
+				</div>
+			</div>
+		</div>
+        
+
+      
+
+        <script src="/js/energy.js"></script>
+    </body>
+</html>
