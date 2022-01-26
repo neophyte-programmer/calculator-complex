@@ -19,7 +19,7 @@
 			href="/img/favicons/favicon.ico"
 		/>
 		<link rel="stylesheet" href="css/style.css" />
-		<title> Moles | Calculator Complex</title>
+		<title> Kinetic Energy | Calculator Complex</title>
 
         
 	</head>
@@ -39,34 +39,29 @@
 								<div class="col-lg-6">
 									<div class="p-5">
 										<div class="mb-5">
-											<h3 class="h4 font-weight-bold text-theme">Moles</h3>
+											<h3 class="h4 font-weight-bold text-theme">Kinetic Energy</h3>
 										</div>
 		
-										<h6 class="h5 mb-0 text-center">Calculate</h6>
+										<h6 class="h5 mb-0 ">Calculate</h6>
 										<p class="text-muted mt-2 mb-5">
-                                            Enter the values for <span class="text-primary">M</span> <span class="text-dark">(Mass)</span>,
-                                            <span class="text-primary">n</span> <span class="text-dark">(number of moles in substance)</span>
-                                            and <span class="text-primary">m</span> <span class="text-dark">(mass of substance in grams)</span>
+                                            Enter the values for <span class="text-primary">m</span> <span class="text-dark">(mass)</span>
+                                            and <span class="text-primary">v</span> <span class="text-dark">(velocity)</span>
 										</p>
 		
                                             <div class="container-fluid row permutation-box">
-											<label class="mx-2" >Enter M:</label>
-											<input class="nums form-control" id="M" type="text" required="required" style="max-width: 3.5rem;" />
+											<label class="mx-2" >Enter m:</label>
+											<input class="nums form-control" id="mass" type="text" required="required" style="max-width: 3.5rem;" />
                                             </div>
 
                                             <div class="container-fluid row permutation-box my-2">
-                                                <label class="mx-2" >Enter m:</label>
-                                                <input class="nums form-control" id="m" type="text" required="required" style="max-width: 3.5rem;" />
-                                                </div>
-
-                                            <div class="container-fluid row permutation-box my-2">
-                                                <label class="mx-2" >Enter n:</label>
-                                                <input class="nums form-control" id="n" type="text" required="required" style="max-width: 3.5rem;" />
+                                                <label class="mx-2" >Enter v:</label>
+                                                <input class="nums form-control" id="velocity" type="text" required="required" style="max-width: 3.5rem;" />
                                             </div>
+
 											
-											<button class="btn btn-primary my-2" onclick="getMoles()">Get Moles</button>
+											<button class="btn btn-primary my-2" onclick="getKineticEnergy()">Get Answer</button>
 											<p class="text-muted">The answer is:</p>
-											<h3 id="moles"></h3>
+											<h3 id="kinetic-energy"></h3>
 										
                                         
 										
@@ -77,9 +72,9 @@
 									<div class="account-block rounded-right">
 										<div class="overlay rounded-right"></div>
 										<div class="account-testimonial bg-dark p-1">
-											<h4 class="text-white mb-4">What is Moles?</h4>
+											<h4 class="text-white mb-4">What is Kinetic Energy?</h4>
 											<p class="lead text-white">
-												The mole is the amount of substance of a system which contains as many elementary entities as there are atoms in 0.012 kilogram of carbon 12; its symbol is “mol”.
+                                                Potential energy of an object is the energy that it possesses due to its motion.
 											</p>
 										</div>
 									</div>
@@ -98,6 +93,6 @@
 
       
 
-        <script src="/js/moles.js"></script>
+        <script src="/js/kinetic-energy.js"></script>
     </body>
-</html> 
+</html>

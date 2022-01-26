@@ -19,7 +19,7 @@
 			href="/img/favicons/favicon.ico"
 		/>
 		<link rel="stylesheet" href="css/style.css" />
-		<title> Work | Calculator Complex</title>
+		<title> Potential Energy | Calculator Complex</title>
 
         
 	</head>
@@ -39,28 +39,34 @@
 								<div class="col-lg-6">
 									<div class="p-5">
 										<div class="mb-5">
-											<h3 class="h4 font-weight-bold text-theme">Work</h3>
+											<h3 class="h4 font-weight-bold text-theme">Potential Energy</h3>
 										</div>
 		
 										<h6 class="h5 mb-0 text-center">Calculate</h6>
 										<p class="text-muted mt-2 mb-5">
-                                            Enter the values for <span class="text-primary">F</span> <span class="text-dark">(Force)</span>
-                                            and <span class="text-primary">d</span> <span class="text-dark">(distance)</span>
+                                            Enter the values for <span class="text-primary">m</span> <span class="text-dark">(mass)</span>,
+                                            <span class="text-primary">g</span> <span class="text-dark">(acceleration due to gravity)</span>
+                                            and <span class="text-primary">h</span> <span class="text-dark">(height)</span>
 										</p>
 		
                                             <div class="container-fluid row permutation-box">
-											<label class="mx-2" >Enter F:</label>
-											<input class="nums form-control" id="force" type="text" required="required" style="max-width: 3.5rem;" />
+											<label class="mx-2" >Enter m:</label>
+											<input class="nums form-control" id="m" type="text" required="required" style="max-width: 3.5rem;" />
                                             </div>
 
                                             <div class="container-fluid row permutation-box my-2">
-                                                <label class="mx-2" >Enter d:</label>
-                                                <input class="nums form-control" id="distance" type="text" required="required" style="max-width: 3.5rem;" />
+                                                <label class="mx-2" >Enter g:</label>
+                                                <input class="nums form-control" id="g" type="text" required="required" style="max-width: 3.5rem;" />
+                                            </div>
+
+                                            <div class="container-fluid row permutation-box my-2">
+                                                <label class="mx-2" >Enter h:</label>
+                                                <input class="nums form-control" id="h" type="text" required="required" style="max-width: 3.5rem;" />
                                             </div>
 											
-											<button class="btn btn-primary my-2" onclick="getWork()">Get Work</button>
+											<button class="btn btn-primary my-2" onclick="getPotentialEnergy()">Get Answer</button>
 											<p class="text-muted">The answer is:</p>
-											<h3 id="work"></h3>
+											<h3 id="potential-energy"></h3>
 										
                                         
 										
@@ -71,9 +77,10 @@
 									<div class="account-block rounded-right">
 										<div class="overlay rounded-right"></div>
 										<div class="account-testimonial bg-dark p-1">
-											<h4 class="text-white mb-4">What is Work?</h4>
+											<h4 class="text-white mb-4">What is Potetial Energy?</h4>
 											<p class="lead text-white">
-												In physics, work is the energy transferred to or from an object via the application of force along a displacement.
+                                                Potential energy is the energy held by an object because of its position relative to other objects, 
+                                                stresses within itself, its electric charge, or other factors.
 											</p>
 										</div>
 									</div>
@@ -92,6 +99,6 @@
 
       
 
-        <script src="/js/work.js"></script>
+        <script src="/js/potential-energy.js"></script>
     </body>
 </html>

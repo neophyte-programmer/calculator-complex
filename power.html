@@ -19,7 +19,7 @@
 			href="/img/favicons/favicon.ico"
 		/>
 		<link rel="stylesheet" href="css/style.css" />
-		<title> Work | Calculator Complex</title>
+		<title> Power | Calculator Complex</title>
 
         
 	</head>
@@ -39,13 +39,17 @@
 								<div class="col-lg-6">
 									<div class="p-5">
 										<div class="mb-5">
-											<h3 class="h4 font-weight-bold text-theme">Work</h3>
+											<h3 class="h4 font-weight-bold text-theme">Power</h3>
 										</div>
 		
 										<h6 class="h5 mb-0 text-center">Calculate</h6>
 										<p class="text-muted mt-2 mb-5">
-                                            Enter the values for <span class="text-primary">F</span> <span class="text-dark">(Force)</span>
-                                            and <span class="text-primary">d</span> <span class="text-dark">(distance)</span>
+                                            The formula used in this calculator is given as <br>
+                                            "P = (F * d) / t". Note that F * d = Work <br>
+                                            Enter the values for 
+                                            <span class="text-primary">F</span> <span class="text-dark">(Force)</span>,
+                                            <span class="text-primary">d</span> <span class="text-dark">(displacement)</span>
+                                            and <span class="text-primary">t</span> <span class="text-dark">(time)</span>
 										</p>
 		
                                             <div class="container-fluid row permutation-box">
@@ -55,12 +59,17 @@
 
                                             <div class="container-fluid row permutation-box my-2">
                                                 <label class="mx-2" >Enter d:</label>
-                                                <input class="nums form-control" id="distance" type="text" required="required" style="max-width: 3.5rem;" />
+                                                <input class="nums form-control" id="displacement" type="text" required="required" style="max-width: 3.5rem;" />
+                                            </div>
+
+                                            <div class="container-fluid row permutation-box my-2">
+                                                <label class="mx-2" >Enter t:</label>
+                                                <input class="nums form-control" id="time" type="text" required="required" style="max-width: 3.5rem;" />
                                             </div>
 											
-											<button class="btn btn-primary my-2" onclick="getWork()">Get Work</button>
+											<button class="btn btn-primary my-2" onclick="getPower()">Get Answer</button>
 											<p class="text-muted">The answer is:</p>
-											<h3 id="work"></h3>
+											<h3 id="power"></h3>
 										
                                         
 										
@@ -71,9 +80,9 @@
 									<div class="account-block rounded-right">
 										<div class="overlay rounded-right"></div>
 										<div class="account-testimonial bg-dark p-1">
-											<h4 class="text-white mb-4">What is Work?</h4>
+											<h4 class="text-white mb-4">What is Power?</h4>
 											<p class="lead text-white">
-												In physics, work is the energy transferred to or from an object via the application of force along a displacement.
+												It is the time rate of doing work or delivering energy
 											</p>
 										</div>
 									</div>
@@ -92,6 +101,6 @@
 
       
 
-        <script src="/js/work.js"></script>
+        <script src="/js/power.js"></script>
     </body>
 </html>
