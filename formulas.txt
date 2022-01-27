@@ -21,5 +21,35 @@ SCIENCE
 9. Acceleration
 
 MATHS
+1. Shapes
+    - Square
+    - Rectangle
+    - Triangle
+    - Rhombus
+    - Trapezoid
+    - Circle
+    - Cone
+    - Sphere
+    - Cube
+    - Cuboid
+    - Regular prism
+    - Cylinder
+2. Difference of 2 squares
+3. Perfect Square Trinomial
+4. Exponents
+    - Product
+    - Quotient
+    - Power of Power
+    - Negative Exponents
+    - Fractional Exponents
+5. Geometry
+    - Pythagorean Theorem
+    - Sum of interior angles of a polygon
+    - Distance between two points
+    - Midpoints
+6. Business Maths 
+    - Simple Interest
+    - Compound Interest
+
 
 
