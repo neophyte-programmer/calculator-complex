@@ -35,7 +35,7 @@ function getArea() {
 
     if (b <= 0 || h <= 0) {
         answer = 0
-        alert("Enter a number above 0 to get a valid perimeter")
+        alert("Enter a number above 0 to get a valid area")
     }
 
 	document.getElementById("triangle").innerHTML = answer.toFixed(2) + " units<sup>2"
