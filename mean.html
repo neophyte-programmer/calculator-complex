@@ -1,88 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-			rel="stylesheet"
-			id="bootstrap-css"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
-		/>
-		<link
-			rel="shortcut icon"
-			type="image/jpg"
-			href="/img/favicons/favicon.ico"
-		/>
-		<link rel="stylesheet" href="css/style.css" />
-		<title> Mean | Calculator Complex</title>
 
-        
-	</head>
-    <body>
-        
-        <div class="container d-flex justify-content-center align-items-center my-5 ">
-            <a href="/statistics-formulas.html" class="btn btn-primary">Back To Formulas</a>
-        </div>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+	<link rel="stylesheet"
+		href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+	<link rel="shortcut icon" type="image/jpg" href="/img/favicons/favicon.ico" />
+	<link rel="stylesheet" href="css/style.css" />
+	<title> Mean | Calculator Complex</title>
 
 
-		<div id="main-wrapper" class="container mean">
-			<div class="row justify-content-center">
-				<div class="col-xl-10">
-					<div class="card border-0">
-						<div class="card-body p-0">
-							<div class="row no-gutters">
-								<div class="col-lg-6">
-									<div class="p-5">
-										<div class="mb-5">
-											<h3 class="h4 font-weight-bold text-theme">Mean</h3>
-										</div>
-		
-										<h6 class="h5 mb-0 text-center">Calculate</h6>
-										<p class="text-muted mt-2 mb-5">Enter the data set separated by commas(,) and click the button to
-											get your mean. For example: <span class="text-primary">2,4,6,8</span>
-										</p>
-		
-										
-												<label >Enter data set</label>
-												<input class="nums form-control" id="nums" type="text" required="required" />
-											
-											
-											<button class="btn btn-primary my-2" onclick="mean()">Get Mean</button>
-											<p class="text-muted">The mean is:</p>
-											<h3 id="mean"></h3>
-										
+</head>
+
+<body>
+
+	<div class="container d-flex justify-content-center align-items-center my-5 ">
+		<a href="/statistics-formulas.html" class="btn btn-primary">Back To Formulas</a>
+	</div>
+
+
+	<div id="main-wrapper" class="container mean">
+		<div class="row justify-content-center">
+			<div class="col-xl-10">
+				<div class="card border-0">
+					<div class="card-body p-0">
+						<div class="row no-gutters">
+							<div class="col-lg-6">
+								<div class="p-5">
+									<div class="mb-5">
+										<h3 class="h4 font-weight-bold text-theme">Mean</h3>
 									</div>
+
+									<h6 class="h5 mb-0 text-center">Calculate</h6>
+									<p class="text-muted mt-2 mb-5">Enter the data set separated by commas(,) and click
+										the button to
+										get your mean. For example: <span class="text-primary">2,4,6,8</span>
+									</p>
+
+
+									<label>Enter data set</label>
+									<input class="nums form-control" id="nums" type="text" required="required" />
+
+
+									<button class="btn btn-primary my-2" onclick="mean()">Get Mean</button>
+									<p class="text-muted">The mean is:</p>
+									<h3 id="mean"></h3>
+
 								</div>
-		
-								<div class="col-lg-6 d-none d-lg-inline-block">
-									<div class="account-block rounded-right">
-										<div class="overlay rounded-right"></div>
-										<div class="account-testimonial">
-											<h4 class="text-white mb-4">What is Mean?</h4>
-											<p class="lead text-white">The mean, or average, is calculated by adding up the scores and dividing the total by the number of scores
-											</p>
-										</div>
+							</div>
+
+							<div class="col-lg-6 d-none d-lg-inline-block">
+								<div class="account-block rounded-right">
+									<div class="overlay rounded-right"></div>
+									<div class="account-testimonial">
+										<h4 class="text-white mb-4">What is Mean?</h4>
+										<p class="lead text-white">The mean, or average, is calculated by adding up the
+											scores and dividing the total by the number of scores
+										</p>
 									</div>
 								</div>
 							</div>
-		
 						</div>
+
 					</div>
-		
-					
-		
 				</div>
+
+
+
 			</div>
 		</div>
-        
+	</div>
 
-      
 
-        <script src="/js/mean.js"></script>
-    </body>
+
+
+	<script src="/js/mean.js"></script>
+</body>
+
 </html>
