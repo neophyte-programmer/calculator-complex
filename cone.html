@@ -10,8 +10,7 @@
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
     <link rel="shortcut icon" type="image/jpg" href="/img/favicons/favicon.ico" />
     <link rel="stylesheet" href="css/style.css" />
-    <title> Circle | Calculator Complex</title>
-
+    <title> Cone | Calculator Complex</title>
 
 </head>
 
@@ -33,17 +32,19 @@
                             <div class="col-lg-6">
                                 <div class="p-5">
                                     <div class="mb-5">
-                                        <h3 class="h4 font-weight-bold text-theme">Circle</h3>
+                                        <h3 class="h4 font-weight-bold text-theme">Cone</h3>
                                     </div>
 
                                     <h6 class="h5 mb-0 ">Calculate</h6>
                                     <p class="text-muted mt-2 mb-5">
                                         Enter the value for
                                         <span class="text-primary">r</span> <span class="text-dark">(radius)</span>,
+                                        <span class="text-primary">l</span> <span class="text-dark">(slant height)</span>,
+                                        <span class="text-primary">h</span> <span class="text-dark">(vertical height)</span>,
                                        
                                         <br>
                                         The formula for circumference is given as <br>
-                                        <strong class="text-primary">C = 2 &pi; r</strong>  <br>
+                                        <strong class="text-primary">TSA = &pi; r  l</strong>  <br>
                                         and the formula for area is given as <br>
                                         <strong class="text-primary">A = &pi; r <sup>2</sup></strong> 
                                     </p>
@@ -53,16 +54,26 @@
                                         <input class="nums form-control" id="r" type="text" required="required"
                                             style="max-width: 3.5rem;" />
                                     </div>
+                                    <div class="container-fluid row permutation-box my-2">
+                                        <label class="mx-2">Enter l:</label>
+                                        <input class="nums form-control" id="l" type="text" required="required"
+                                            style="max-width: 3.5rem;" />
+                                    </div>
+                                    <div class="container-fluid row permutation-box my-2">
+                                        <label class="mx-2">Enter h:</label>
+                                        <input class="nums form-control" id="h" type="text" required="required"
+                                            style="max-width: 3.5rem;" />
+                                    </div>
                                     
 
 
 
 
 
-                                    <button class="btn btn-primary my-2" onclick="getCircumference()">Get Circumference</button>
-                                    <button class="btn btn-primary my-2" onclick="getArea()">Get Area</button>
+                                    <button class="btn btn-primary my-2" onclick="getTSA()">Total Surface Area</button>
+                                    <button class="btn btn-primary my-2" onclick="getVolume()">Get Volume</button>
                                     <p class="text-muted">The answer is:</p>
-                                    <h3 id="circle"></h3>
+                                    <h3 id="cone"></h3>
 
 
 
@@ -89,7 +100,7 @@
 
 
 
-    <script src="/js/circle.js"></script>
+    <script src="/js/cone.js"></script>
 </body>
 
 </html>
