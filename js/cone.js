@@ -12,7 +12,7 @@ function getTSA() {
 	// making the perimeter = 0 if any of the values are <= 0
 	if (r <= 0 || l <= 0) {
 		answer = 0
-		alert('Enter a number above 0 to get a valid circumference')
+		alert('Enter a number above 0 to get a valid Total Surface')
 	}
 
 	document.getElementById('cone').innerHTML = answer.toFixed(2) + ' units'
@@ -31,7 +31,7 @@ function getVolume() {
 
 	if (r <= 0 || h <= 0) {
 		answer = 0
-		alert('Enter a number above 0 to get a valid area')
+		alert('Enter a number above 0 to get a valid volume')
 	}
 
 	document.getElementById('cone').innerHTML =
